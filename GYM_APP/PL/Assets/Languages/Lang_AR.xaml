@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GYM_APP.PL.Assets.Languages" 
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Font -->
+    <FontFamily x:Key="MaterialFont_AR_EN_Bold">Cairo SemiBold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_SemiBold">Cairo SemiBold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_Black">Cairo SemiBold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_Regular">Cairo SemiBold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_Light">Cairo SemiBold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_ExtraLight">Cairo SemiBold</FontFamily>
+
+    <!--#region Main Windows-->
+    <!-- Main Windows-->
+    <system:String x:Key="Main_ToolTip_Exit">إغلاق</system:String>
+    <system:String x:Key="Main_ToolTip_Restore">تصغير</system:String>
+    <system:String x:Key="Main_ToolTip_Maximize">تكبير</system:String>
+    <system:String x:Key="Main_Btn_Minimize">Minimize</system:String>
+    <system:String x:Key="Main_CurrentUser">المستخدم الحالي : </system:String>
+    <system:String x:Key="Main_Role">الوظيفة : </system:String>
+    <system:String x:Key="Main_ToolTip_Home">الصفحة الرئيسية</system:String>
+    <system:String x:Key="Main_ToolTip_Members">المشتركين</system:String>
+    <system:String x:Key="Main_ToolTip_Subscription">الاشتراكات</system:String>
+    <!--#endregion-->
+
+    <!--#region  Subscriptions-->
+    <!-- Subscription Page -->
+    
+    <system:String x:Key="Main_ToolTip_Add">اشتراك جديد</system:String>
+    <system:String x:Key="Main_ToolTip_Refresh">تحديث</system:String>
+    <system:String x:Key="Main_ToolTip_Print">طباعة</system:String>
+    <system:String x:Key="Main_ToolTip_EditMode">وضع التعديل</system:String>
+    <system:String x:Key="Main_ToolTip_DeleteMode">وضع الحذف</system:String>
+    <system:String x:Key="Main_lbl_Subscription">المشتركين</system:String>
+
+    <!-- DataGrid -->
+    <system:String x:Key="Main_Col_PCode">رمز الصنف</system:String>
+    <system:String x:Key="Main_Col_Barcode">باركود</system:String>
+    <system:String x:Key="Main_Col_Description">اسم الصنف</system:String>
+    <system:String x:Key="Main_Col_Category">قسم</system:String>
+    <system:String x:Key="Main_Col_Brand">نوعية</system:String>
+    <system:String x:Key="Main_Col_CostPrice">سعر الكلفة</system:String>
+    <system:String x:Key="Main_Col_SellPrice">سعر البيع</system:String>
+    <system:String x:Key="Main_Col_QTY">الكمية</system:String>
+
+    <!-- Delete Dialog -->
+    <system:String x:Key="Subscription_lbl_Message">هل أنت متأكد أنك تريد حذف هذا السجل ؟</system:String>
+    <system:String x:Key="Subscription_btn_Accept">موافق</system:String>
+    <system:String x:Key="Subscription_btn_Cancel">إلغاء</system:String>
+    
+    <!--#endregion-->
+
+    <!--#region  Settings-->
+    <!-- Settings Page -->
+    
+    <system:String x:Key="Theme_cmb_Language">اللغة</system:String>
+
+    <system:String x:Key="Theme_chk_DarkMode">الوضع المظلم</system:String>
+    <system:String x:Key="Theme_chk_Theme">المظهر</system:String>
+
+    <!--#endregion-->
+
+</ResourceDictionary>

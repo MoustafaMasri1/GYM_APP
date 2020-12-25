@@ -1,0 +1,96 @@
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\GYM_APP.exe.config
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\GYM_APP.exe
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\GYM_APP.pdb
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\FluentWPF.dll
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\MaterialDesignColors.dll
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\MaterialDesignColors.pdb
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\MainWindow.g.cs
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\App.g.cs
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP_MarkupCompile.cache
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP_MarkupCompile.lref
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\App.baml
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\MainWindow.baml
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.g.resources
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.csproj.CopyComplete
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.exe
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP.pdb
+C:\Users\LENOVO\source\repos\GYM_APP\bin\Debug\ShowMeTheXAML.dll
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\PL\UserControls\Home_Control.g.cs
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\PL\UserControls\Home_Control.baml
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\GYM_APP_Content.g.cs
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\PL\UserControls\NewMember_Control.g.cs
+C:\Users\LENOVO\source\repos\GYM_APP\obj\Debug\PL\UserControls\NewMember_Control.baml
+H:\GYM_APP\bin\Debug\GYM_APP.exe.config
+H:\GYM_APP\bin\Debug\GYM_APP.exe
+H:\GYM_APP\bin\Debug\GYM_APP.pdb
+H:\GYM_APP\bin\Debug\FluentWPF.dll
+H:\GYM_APP\bin\Debug\MaterialDesignColors.dll
+H:\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.dll
+H:\GYM_APP\bin\Debug\ShowMeTheXAML.dll
+H:\GYM_APP\bin\Debug\MaterialDesignColors.pdb
+H:\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.pdb
+H:\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.xml
+H:\GYM_APP\obj\Debug\GYM_APP.csprojAssemblyReference.cache
+H:\GYM_APP\obj\Debug\MainWindow.g.cs
+H:\GYM_APP\obj\Debug\PL\UserControls\Home_Control.g.cs
+H:\GYM_APP\obj\Debug\PL\UserControls\NewMember_Control.g.cs
+H:\GYM_APP\obj\Debug\App.g.cs
+H:\GYM_APP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\GYM_APP\obj\Debug\GYM_APP_MarkupCompile.cache
+H:\GYM_APP\obj\Debug\GYM_APP_MarkupCompile.lref
+H:\GYM_APP\obj\Debug\App.baml
+H:\GYM_APP\obj\Debug\MainWindow.baml
+H:\GYM_APP\obj\Debug\PL\UserControls\Home_Control.baml
+H:\GYM_APP\obj\Debug\PL\UserControls\NewMember_Control.baml
+H:\GYM_APP\obj\Debug\GYM_APP.g.resources
+H:\GYM_APP\obj\Debug\GYM_APP.Properties.Resources.resources
+H:\GYM_APP\obj\Debug\GYM_APP.csproj.GenerateResource.cache
+H:\GYM_APP\obj\Debug\GYM_APP.csproj.CoreCompileInputs.cache
+H:\GYM_APP\obj\Debug\GYM_APP.csproj.CopyComplete
+H:\GYM_APP\obj\Debug\GYM_APP.exe
+H:\GYM_APP\obj\Debug\GYM_APP.pdb
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\GYM_APP.exe.config
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\GYM_APP.exe
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\GYM_APP.pdb
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\FluentWPF.dll
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\MaterialDesignColors.dll
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\MainWindow.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\App.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP_MarkupCompile.cache
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP_MarkupCompile.lref
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\App.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\MainWindow.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.g.resources
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.Properties.Resources.resources
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.csproj.GenerateResource.cache
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.csproj.CoreCompileInputs.cache
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.csproj.CopyComplete
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.exe
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.pdb
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Home.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Home.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\NewMember.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Theme.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\NewMember.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Theme.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\AddCash.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\AddCash.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Payment.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Payment.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Subscriptions.g.cs
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\UserControls\Subscriptions.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\Assets\Languages\Lang_AR.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\PL\Assets\Languages\Lang_EN.baml
+C:\Users\Moustafa Masri\Desktop\New folder (2)\GYM_APP\obj\Debug\GYM_APP.csprojAssemblyReference.cache

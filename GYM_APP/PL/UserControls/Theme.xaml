@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="GYM_APP.PL.UserControls.Theme"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GYM_APP.PL.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialFont_AR_EN_SemiBold}"
+           >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox
+                Style="{StaticResource MaterialDesignCardGroupBox}"
+                Header="{DynamicResource Theme_chk_Theme}"
+                FontSize="15"
+                Name="cd_Theme"
+                Margin="10"
+                >
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        Margin="8,8,0,0"
+                        Grid.Row="0"
+                        HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <TextBlock
+                            FontSize="15"
+                            Margin="3 0"
+                            Text="{DynamicResource Theme_chk_DarkMode}"
+                            VerticalAlignment="Center"
+                           />
+                        <ToggleButton
+                        Name="IsDarkMode" Margin="8 0 8 0" 
+                        Checked="IsDarkMode_Checked" 
+                        Unchecked="IsDarkMode_Unchecked"/>
+                    </StackPanel>
+                    <materialDesign:Card
+                        Margin="10"
+                        Grid.Row="1"
+                        materialDesign:ColorZoneAssist.Mode="PrimaryMid"
+                        materialDesign:ShadowAssist.ShadowEdges="All">
+                        <materialDesign:ColorPicker
+                        Name="PrimaryColor" 
+                        PreviewMouseMove="PrimaryColor_PreviewMouseMove"/>
+                    </materialDesign:Card>
+
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+
+
+    </Grid>
+</UserControl>

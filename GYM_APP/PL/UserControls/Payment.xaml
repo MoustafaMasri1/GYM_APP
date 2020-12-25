@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="GYM_APP.PL.UserControls.Payment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GYM_APP.PL.UserControls"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}">
+    <Border  Padding="5 0 5 5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+           
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top"
+  Orientation="Horizontal"
+  Margin="0 10 0 0">
+                <RadioButton                            
+    Style="{StaticResource MaterialDesignTabRadioButton}"
+    Margin="0 0 0 0"
+    IsChecked="False"
+    IsEnabled="False"
+    Content="Add Cash" Cursor="Hand"/>
+                <RadioButton
+                                   
+    Style="{StaticResource MaterialDesignTabRadioButton}"
+    Margin="10 0 0 0"
+    IsChecked="True"
+    IsEnabled="False"
+                    
+    Content="Payment " Cursor="Hand"  />
+
+            </StackPanel>
+            <GroupBox
+            Header="Personal Information"
+            Style="{StaticResource MaterialDesignCardGroupBox}"
+            Margin="5"
+            materialDesign:ColorZoneAssist.Mode="PrimaryMid"   
+            materialDesign:ShadowAssist.ShadowEdges="Right"
+            Grid.Row="1" Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.2*"/>
+                        <RowDefinition Height="1.2*"/>
+                        <RowDefinition Height="1.2*"/>
+                        <RowDefinition Height="1.2*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0"  IsEnabled="False" materialDesign:HintAssist.Hint="Number" Style="{StaticResource MaterialDesignFloatingHintTextBox}" VerticalAlignment="Center" />
+                    <DatePicker
+                            Grid.Row="1"
+                            materialDesign:HintAssist.Hint="Pick Date"
+                            Style="{StaticResource MaterialDesignFloatingHintDatePicker}"/>
+                    <ComboBox
+                            Grid.Row="2" IsEditable="True" materialDesign:HintAssist.Hint="Member" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="3" materialDesign:HintAssist.Hint="Name" Style="{StaticResource MaterialDesignFloatingHintTextBox}" VerticalAlignment="Center" />
+
+                    <TextBox
+                        TextWrapping="Wrap"
+                        VerticalAlignment="Stretch"
+                        MinWidth="280"
+                        AcceptsReturn="True"
+                        VerticalScrollBarVisibility="Auto"
+                        SpellCheck.IsEnabled="True"
+                        Grid.Row="4"
+                        materialDesign:HintAssist.Hint="Remark" 
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+                </Grid>
+            </GroupBox>
+            <Grid Grid.Column="0" Grid.Row="1">
+                <Button Width="40" Height="40"
+                         Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
+  Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
+  ToolTip="MaterialDesignFloatingActionLightButton">
+                    <materialDesign:PackIcon
+    Kind="NavigateBefore"
+    Height="24"
+    Width="24" />
+                </Button>
+            </Grid>
+        </Grid>
+
+    </Border>
+</UserControl>

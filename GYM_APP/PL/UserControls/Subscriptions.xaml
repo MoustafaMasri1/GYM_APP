@@ -1,0 +1,285 @@
+﻿<UserControl x:Class="GYM_APP.PL.UserControls.NewSUB"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GYM_APP.PL.UserControls"
+             mc:Ignorable="d" 
+             xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+             fw:PointerTracker.Enabled="True"
+             fw:AcrylicWindow.Enabled="True"
+             FontFamily="{DynamicResource MaterialFont_AR_EN_SemiBold}"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="640.7" d:DesignWidth="921.6">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.DialogHost.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="43"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <materialDesign:Card
+                    Margin="10 0 10 0"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth2">
+                <Grid >
+                    <StackPanel
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Left"
+                            Margin="15 0 0 0">
+                        <materialDesign:PackIcon
+                                Kind="BadgeAccountHorizontal"
+                                Width="23.5" 
+                                Height="23.5"
+                                Margin="0 0 0 3"
+                                VerticalAlignment="Center" />
+                        <TextBlock 
+                                Text="{DynamicResource Main_lbl_Subscription}"
+                                Margin="10 0 0 0"
+                                VerticalAlignment="Center"
+                                FontSize="15"
+                                FontFamily="{DynamicResource MaterialFont_AR_EN_Bold}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <TextBox
+                            Name="textSearch"
+                            HorizontalAlignment="Right"
+                            Width="150"
+                            Height="35"
+                            TextChanged="textSearch_TextChanged"
+                            materialDesign:HintAssist.Hint="بحث"
+                            materialDesign:TextFieldAssist.HasClearButton="True">
+                        </TextBox>
+                        <ListBox
+                                SelectionMode="Extended"
+                                VerticalAlignment="Center"
+                                Margin="0 0 0 1"
+                                Style="{StaticResource MaterialDesignFilterChipAccentOutlineListBox}">
+                            <ListBoxItem Name="chk_ShowDeleteBtns"
+                                         Selected="chk_ShowDeleteBtns_Selected" 
+                                         Unselected="chk_ShowDeleteBtns_Unselected"
+                                         ToolTip="{DynamicResource Main_ToolTip_DeleteMode}">
+                                <materialDesign:PackIcon
+                                        Kind="Delete" 
+                                        Foreground="{Binding ElementName=btn_Refresh, Path=Foreground}"/>
+                            </ListBoxItem>
+                            <ListBoxItem Name="chk_EnableEditing"
+                                             Selected="chk_EnableEditing_Selected"
+                                             Unselected="chk_EnableEditing_Unselected"
+                                             ToolTip="{DynamicResource Main_ToolTip_EditMode}">
+                                <materialDesign:PackIcon
+                                        Kind="Edit" 
+                                        Foreground="{Binding ElementName=btn_Refresh, Path=Foreground}"/>
+                            </ListBoxItem>
+                        </ListBox>
+                        <Button
+                                ToolTip="{DynamicResource Main_ToolTip_Print}"
+                            
+                                Style="{StaticResource MaterialDesignFlatButton}" 
+                                VerticalAlignment="Top" 
+                                HorizontalAlignment="Right" 
+                                Height="43" Width="45">
+                            <materialDesign:PackIcon 
+                                    Kind="Printer" 
+                                    Width="22" 
+                                    Height="22" 
+                                    Margin="-10"/>
+                        </Button>
+                        <Button
+                                ToolTip="{DynamicResource Main_ToolTip_Refresh}"
+                                Name="btn_Refresh"
+                                Click="btn_Refresh_Click"
+                                Style="{StaticResource MaterialDesignFlatButton}" 
+                                HorizontalAlignment="Right" 
+                                Height="Auto" Width="45">
+                            <materialDesign:PackIcon
+                                    Kind="Refresh" 
+                                    Width="22" 
+                                    Height="22"
+                                    Margin="-10"/>
+                        </Button>
+                        <Button
+                                Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" 
+                                Style="{StaticResource MaterialDesignFlatButton}" 
+                                VerticalAlignment="Top" 
+                                HorizontalAlignment="Right" 
+                                Height="43"
+                                Width="45"
+                                ToolTip="{DynamicResource Main_ToolTip_Add}">
+                            <materialDesign:PackIcon 
+                                    Kind="Add" 
+                                    Width="22" 
+                                    Height="22" 
+                                    Margin="-10"/>
+                        </Button>
+
+                    </StackPanel>
+                </Grid>
+
+            </materialDesign:Card>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="10">
+            <materialDesign:Card
+                    materialDesign:ShadowAssist.ShadowDepth="Depth2">
+                <DataGrid
+                    IsTextSearchEnabled="True"
+                     FontSize="14.5"
+                     Margin="1"
+                     Name="dg_Subscriptions"
+                     SelectionUnit="FullRow"
+                     CanUserAddRows="False"
+                     SelectionMode="Extended"
+                     ColumnWidth="*"
+                     CanUserReorderColumns="False"
+                     BeginningEdit="dg_Subscriptions_BeginningEdit"
+                     CellEditEnding="dg_Subscriptions_CellEditEnding"
+                     AutoGenerateColumns="False"
+                     HeadersVisibility="All"
+                     IsReadOnly="True"
+                     HorizontalScrollBarVisibility="Disabled"
+                     RowHeight="49">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                                IsReadOnly="True"
+                                Width="Auto"
+                                Binding="{Binding Num}"
+                                Header="#"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
+                        <materialDesign:DataGridTextColumn
+                                Binding="{Binding PCode}"
+                                Width="Auto"
+                                Header="{DynamicResource Main_Col_PCode}"
+                                IsReadOnly="True"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:DataGridTextColumn>
+                        <materialDesign:DataGridTextColumn
+                                Binding="{Binding Barcode}"
+                                Width="Auto"
+                                Header="{DynamicResource Main_Col_Barcode}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:DataGridTextColumn>
+                        <materialDesign:DataGridTextColumn
+                                Binding="{Binding Description}"
+                                Header="{DynamicResource Main_Col_Description}"
+                                
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                    <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </materialDesign:DataGridTextColumn>
+                        <materialDesign:DataGridComboBoxColumn
+                                Width="Auto"
+                                x:Name="cmb_Categories"
+                                SelectedValueBinding="{Binding CategoryID}"
+                                IsEditable="True"
+                                Header="{DynamicResource Main_Col_Category}">
+                        </materialDesign:DataGridComboBoxColumn>
+                        <materialDesign:DataGridComboBoxColumn
+                                Width="Auto"
+                                x:Name="cmb_Brands"
+                                SelectedValueBinding="{Binding BrandID}"
+                                IsEditable="True"
+                                Header="{DynamicResource Main_Col_Brand}">
+                        </materialDesign:DataGridComboBoxColumn>
+                        <materialDesign:DataGridTextColumn
+                                Binding="{Binding CostPrice}"
+                                Width="Auto"
+                                Header="{DynamicResource Main_Col_CostPrice}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:DataGridTextColumn>
+                        <materialDesign:DataGridTextColumn
+                                Binding="{Binding SellPrice}"
+                                Width="Auto"
+                                Header="{DynamicResource Main_Col_SellPrice}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:DataGridTextColumn>
+                        <materialDesign:DataGridTextColumn
+                                Binding="{Binding QTY}"
+                                Width="Auto"
+                                Header="{DynamicResource Main_Col_QTY}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:DataGridTextColumn>
+                        <DataGridTemplateColumn x:Name="col_btn_Delete"  IsReadOnly="True" Width="Auto" Visibility="Collapsed">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button 
+                                        Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
+                                        <Button.CommandParameter>
+                                            <materialDesign:ColorZone Padding="10" Width="350" Height="100">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="1*"/>
+                                                        <RowDefinition Height="45"/>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Name="dialog_Backround" Visibility="Collapsed" Background="#303030" />
+                                                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                                        <materialDesign:PackIcon 
+                                                            Kind="DeleteAlert" 
+                                                            Width="30" 
+                                                            Height="30" />
+                                                        <TextBlock 
+                                                            FontFamily="{DynamicResource MaterialFont_AR_EN_Bold}"
+                                                            Text="{DynamicResource Subscription_lbl_Message}"  
+                                                            Margin="3 0 0 0"
+                                                            FontSize="15"
+                                                            VerticalAlignment="Top" 
+                                                            HorizontalAlignment="Left" />
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                                                        <Button
+                                                            Name="btn_DeleteRecord"
+                                                            Margin="5"
+                                                            Width="80"
+                                                            Content="{DynamicResource Subscription_btn_Accept}"
+                                                            Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"/>
+                                                        <Button
+                                                            Content="{DynamicResource Subscription_btn_Cancel}" 
+                                                            Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                                                            Width="80"/>
+                                                    </StackPanel>
+                                                </Grid>
+                                            </materialDesign:ColorZone>
+                                        </Button.CommandParameter>
+                                        <materialDesign:PackIcon
+                                            Kind="Delete" 
+                                            Width="22" 
+                                            Height="20" 
+                                            Margin="-11 0 -50 0"/>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </materialDesign:Card>
+        </Grid>
+        <materialDesign:ColorZone 
+                CornerRadius="5"
+                Mode="PrimaryDark"
+                Grid.Row="2"
+                Margin="25"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center">
+            <materialDesign:Snackbar 
+                    MessageQueue="{materialDesign:MessageQueue}"
+                    x:Name="SelectRowError"
+                    ActionButtonPlacement="Inline" />
+        </materialDesign:ColorZone>
+    </Grid>
+</UserControl>

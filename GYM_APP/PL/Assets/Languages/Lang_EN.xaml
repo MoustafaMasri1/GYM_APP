@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GYM_APP.PL.Assets.Languages" 
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!-- Font -->
+    <!--<FontFamily x:Key="MaterialFont_AR_EN">Varela Round</FontFamily>-->
+    <FontFamily x:Key="MaterialFont_AR_EN_Bold">Cairo Bold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_SemiBold">Cairo SemiBold</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_Black">Cairo Black</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_Regular">Cairo Regular</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_Light">Cairo Light</FontFamily>
+    <FontFamily x:Key="MaterialFont_AR_EN_ExtraLight">Cairo ExtraLight</FontFamily>
+
+    <!--#region Main Windows-->
+        <!-- Main Windows-->
+    <system:String x:Key="Main_ToolTip_Exit">Exit</system:String>
+    <system:String x:Key="Main_ToolTip_Restore">Restore</system:String>
+    <system:String x:Key="Main_ToolTip_Maximize">Maximize</system:String>
+    <system:String x:Key="Main_Btn_Minimize">Minimize</system:String>
+    <system:String x:Key="Main_CurrentUser">Current User :</system:String>
+    <system:String x:Key="Main_Role">Role :</system:String>
+    <system:String x:Key="Main_ToolTip_Home">Home</system:String>
+    <system:String x:Key="Main_ToolTip_Members">Members</system:String>
+    <system:String x:Key="Main_ToolTip_Subscription">Subscription</system:String>
+    <!--#endregion-->
+    
+    <!--#region  Subscriptions-->
+        <!-- Subscription Page -->
+    <system:String x:Key="Main_ToolTip_Add">New Subscription</system:String>
+    <system:String x:Key="Main_ToolTip_Refresh">Refresh</system:String>
+    <system:String x:Key="Main_ToolTip_Print">Print</system:String>
+    <system:String x:Key="Main_ToolTip_EditMode">Edit Mode</system:String>
+    <system:String x:Key="Main_ToolTip_DeleteMode">Delete Mode</system:String>
+    <system:String x:Key="Main_lbl_Subscription">Subscription</system:String>
+    
+    <!-- DataGrid -->
+    <system:String x:Key="Main_Col_PCode">PCode</system:String>
+    <system:String x:Key="Main_Col_Barcode">Barcode</system:String>
+    <system:String x:Key="Main_Col_Description">Description</system:String>
+    <system:String x:Key="Main_Col_Category">Category</system:String>
+    <system:String x:Key="Main_Col_Brand">Brand</system:String>
+    <system:String x:Key="Main_Col_CostPrice">CostPrice</system:String>
+    <system:String x:Key="Main_Col_SellPrice">SellPrice</system:String>
+    <system:String x:Key="Main_Col_QTY">QTY</system:String>
+    <!-- Delete Dialog -->
+    <system:String x:Key="Subscription_lbl_Message">Are you sure you want to delete this record ?</system:String>
+    <system:String x:Key="Subscription_btn_Accept">Accept</system:String>
+    <system:String x:Key="Subscription_btn_Cancel">Cancel</system:String>
+
+    <!--#endregion-->
+
+    <!--#region  Settings-->
+    <!-- Settings Page -->
+
+    <system:String x:Key="Theme_cmb_Language">Language</system:String>
+
+    <system:String x:Key="Theme_chk_DarkMode">Dark Mode</system:String>
+    <system:String x:Key="Theme_chk_Theme">Theme</system:String>
+
+
+    <!--#endregion-->
+</ResourceDictionary>
